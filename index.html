@@ -1,0 +1,19 @@
+<script language="javascript">
+const p = window.location.pathname;
+  
+let web = 'https://pffy.dev';
+switch(p) {
+  case '/foo':
+    web = 'https://bing.com';
+    break;
+  case '/mdt':
+    web = 'https://workspace.google.com/marketplace/app/cotton_markdown_tables/734474805574';
+    break;    
+  default:
+    // nothing
+    break;
+}
+  
+web + '?utm_source=on-pffy-dev';
+window.location.href = web;
+</script>
